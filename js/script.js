@@ -110,7 +110,6 @@ pintarCarrito();
 
 const total = carrito.reduce((acc, el) => acc + (el.precio * el.cantidad), 0);
 console.log("El total de la compra es de: " + total);
-console.log(inputNombre);
 
 // Anterior
 
