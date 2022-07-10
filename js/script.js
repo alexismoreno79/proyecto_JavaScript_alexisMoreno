@@ -109,7 +109,19 @@ pintarCarrito();
 
 
 const total = carrito.reduce((acc, el) => acc + (el.precio * el.cantidad), 0);
+// Esto lo hago para ver que hace
 console.log("El total de la compra es de: " + total);
+
+const inputRazonS = document.getElementById("nombre");
+const btnEnviar = document.querySelector("#enviar");
+btnGuardar.addEventListener("click", () => {
+    // Los console.log() son para ver como trabaja
+    // Pero sólo hace lo que está guardado en el localStorage, no entiendo que hago mal
+    // Y no lo que voy cargando
+    console.log("El total de la compra es de: " + total);
+    console.log(`${exampleInputNombre.value}\nRealizó una compra con un monto de: ${total}`);
+    alert(`${exampleInputNombre.value}\nRealizó una compra con un monto de: ${total}`);
+});
 
 // Anterior
 
